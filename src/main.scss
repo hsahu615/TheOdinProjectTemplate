@@ -1,0 +1,301 @@
+$theme: #cc9543;
+$gray-color: rgba(74, 74, 74, 0.7);
+
+@import url(//db.onlinewebfonts.com/c/fd1ad3a0f95210975d2f5607501020b5?family=Norse);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  gap: 45%;
+  justify-content: center;
+  height: 100px;
+  .logo {
+    font-family: "Norse";
+    display: flex;
+    color: $theme;
+    align-items: center;
+    font-size: 20px;
+  }
+  #logoImg {
+    height: 70px;
+    width: 70px;
+  }
+  .nav-btn-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .nav-btn-box a {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(74, 74, 74, 0.7);
+  }
+  .nav-btn-box i {
+    font-size: 20px;
+  }
+  #profileImg {
+    height: 35px;
+    width: 35px;
+  }
+  .nav-btn-box a:hover {
+    color: black;
+  }
+}
+
+#my-dashboard {
+  display: block;
+  font-weight: 300;
+  margin: 10px 42%;
+  color: $theme;
+  font-size: 35px;
+}
+
+.profileBox {
+  height: 180px;
+  width: 44%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
+  gap: 50px;
+  img {
+    height: 110px;
+  }
+  p {
+    color: $gray-color;
+  }
+  #username {
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  #goal {
+    font-size: 20px;
+    width: 30%;
+    line-height: 28px;
+  }
+}
+
+.course-list-heading {
+  text-align: center;
+  margin-top: 100px;
+  color: $gray-color;
+  p {
+    font-size: 20px;
+  }
+}
+
+.course-list-box {
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  width: 50%;
+  margin: 50px auto;
+  .javacript {
+    display: flex;
+    gap: 30%;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    border-bottom: 1px solid rgba(74, 74, 74, 0.2);
+  }
+  .course-logo-div {
+    display: flex;
+    gap: 20px;
+    color: rgba(74, 74, 74, 0.7);
+    align-items: center;
+  }
+  .course-logo-div img {
+    height: 130px;
+    width: 130px;
+  }
+  .course-logo-div h2 a {
+    color: rgba(74, 74, 74, 0.7);
+    text-decoration: none;
+  }
+  .course-logo-div p {
+    font-size: 13px;
+  }
+  #resume-button {
+    height: 50px;
+    width: 200px;
+    background-color: #6abfc3;
+    box-shadow: 0 5px 5px 0 rgba(0.5, 0.5, 0.5, 0.15);
+    font-size: large;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  #resume-button:hover {
+    opacity: 0.8;
+  }
+}
+
+#html {
+  gap: 23%;
+}
+#nodejs {
+  gap: 35.5%;
+  img {
+    height: 110px;
+    width: 110px;
+  }
+}
+#hired {
+  gap: 26%;
+  img {
+    height: 110px;
+    width: 110px;
+  }
+}
+
+.submissions {
+  width: 50%;
+  margin: 80px auto;
+  color: rgba(74, 74, 74, 0.7);
+  text-align: center;
+  font-size: 12px;
+  height: 200px;
+  .submissionList {
+    margin-top: 20px;
+    height: 80px;
+    border-top: 1px solid rgba(74, 74, 74, 0.2);
+    padding-top: 20px;
+    align-items: center;
+    gap: 30%;
+    display: flex;
+  }
+  .submissionList h2 {
+    color: $theme;
+    width: 190px;
+    text-decoration: underline;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 33px;
+    text-align: left;
+  }
+  .submissionList h2:hover {
+    color: black;
+    text-decoration: none;
+  }
+  .submissionList div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .submissionList div button {
+    height: 40px;
+    background-color: rgba(216, 216, 216, 0.8);
+    color: rgba(74, 74, 74, 0.7);
+    width: 100px;
+    font-size: 14px;
+    border: none;
+    font-weight: 700;
+    border-radius: 3px;
+  }
+  .submissionList div i {
+    font-size: 20px;
+  }
+  .submissionList div > *:hover {
+    color: black;
+  }
+}
+
+.helpdesk {
+  color: rgba(74, 74, 74, 0.7);
+  text-align: center;
+  width: 50%;
+  line-height: 50px;
+  margin: 0 auto;
+  button {
+    background-color: $theme;
+    width: 200px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    margin-top: 40px;
+    cursor: pointer;
+    letter-spacing: 0.6px;
+    height: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 14%;
+  margin-bottom: 100px;
+  align-items: center;
+  margin-top: 100px;
+  .logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: $theme;
+    font-family: "Norse";
+  }
+  .socialIcons {
+    display: flex;
+    font-size: 25px;
+    color: $theme;
+    gap: 20px;
+  }
+  .footer-one,
+  .footer-two {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      color: rgba(74, 74, 74, 0.7);
+    }
+  }
+}
+
+.conversation {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  color: white;
+  position: fixed;
+  right: 50px;
+  z-index: 1;
+  bottom: 0;
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.15);
+  margin-bottom: 50px;
+  background-color: #6abfc3;
+}
+.chat {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30%;
+  position: fixed;
+  right: 55px;
+  bottom: 10px;
+  color: white;
+  background-color: white;
+  margin-bottom: 50px;
+  background-color: #6abfc3;
+}
